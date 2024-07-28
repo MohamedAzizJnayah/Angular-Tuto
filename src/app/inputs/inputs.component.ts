@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { usr } from '../usr.model';
+import { SharedServiceService } from '../shared-service.service';
 
 @Component({
   selector: 'app-inputs',
@@ -6,17 +8,19 @@ import { Component } from '@angular/core';
   styleUrl: './inputs.component.css'
 })
 export class InputsComponent  {
-  constructor(){}
-usr={
+  constructor(public shared:SharedServiceService , public user:usr){}
+card:user={
   name:'',
   power:'',
   img:''
 
 };
 Add(){
+  this.shared.cards.push(this.card);
   //reinitialisation de l objet card
-    this.usr={ name:'',
+    this.card={ name:'',
       power:'',
       img:''};
+      
 }
 }
