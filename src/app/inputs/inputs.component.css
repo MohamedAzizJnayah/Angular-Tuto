@@ -1,21 +1,23 @@
-.inpt{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.inpt {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-input{
-    width: 250px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    margin: 30px;
+input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 30px;
 }
-button{
-    background-color: rgb(117, 81, 151);
-    color: white ;
-    width: 100px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
+button {
+  background-color: rgb(117, 81, 151);
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
 }
