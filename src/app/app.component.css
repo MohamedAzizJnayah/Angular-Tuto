@@ -1,3 +1,4 @@
-body{
-    background-color: rgb(30, 81, 81);
+.container {
+  width: 100%;
+  background-color: aquamarine;
 }
