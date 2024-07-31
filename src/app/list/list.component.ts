@@ -1,19 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SharedServiceService } from '../shared-service.service';
-
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']  // Correction ici
+  styleUrl: './list.component.css'
 })
-export class ListComponent implements OnInit {
-  constructor() {
-    
-    
-  }
-
-  ngOnInit() {
-    
-  }
+export class ListComponent {
+constructor(public shared:SharedServiceService){}
+Remove(name:string){
+   this.shared.heros=this.shared.heros.filter(hero=>hero.name!=name);
+}
 }

@@ -8,5 +8,5 @@ export class SharedServiceService {
 
   constructor() { }
   
-  
+  heros:any[]=[];
 }
